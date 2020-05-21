@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify an admin can create a user</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b11e4049-fa32-4db0-9e72-3f3c3bd0c4b7</testCaseGuid>
+</TestCaseEntity>

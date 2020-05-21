@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify an admin can edit a user</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f5fe116c-e95e-4c6d-b06f-2518e69600dd</testCaseGuid>
+</TestCaseEntity>

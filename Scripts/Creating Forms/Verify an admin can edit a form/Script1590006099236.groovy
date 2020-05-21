@@ -15,23 +15,25 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('http://3.93.222.111/login')
-
-WebUI.maximizeWindow()
-
-WebUI.setText(findTestObject('Object Repository/Page_DataBeaver/input_Email address_email'), 'oyeniran.timilehin@gmail.com')
-
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_DataBeaver/input_Password_password'), 'Lh5IIxJidBk=')
+WebUI.callTestCase(findTestCase('Login/Verify an admin can login with valid credentials'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Object Repository/Page_DataBeaver/span_Sign in'))
+WebUI.click(findTestObject('Form_OR/Form Object Repo/Page_DataBeaver/Editing a form/a_Editing a form_btn btn-primary btn-sm ng-scope'))
 
-WebUI.verifyElementPresent(findTestObject('Page_DataBeaver/div_Sign-in Successful'), 5)
+WebUI.delay(5)
+
+WebUI.setText(findTestObject('Object Repository/Form_OR/Form Object Repo/Page_DataBeaver/input_Form Name_name'), 'Editing a form')
+
+WebUI.click(findTestObject('Object Repository/Form_OR/Form Object Repo/Page_DataBeaver/a_Static Text'))
+
+WebUI.click(findTestObject('Object Repository/Form_OR/Form Object Repo/Page_DataBeaver/a_Single-line Text'))
+
+WebUI.click(findTestObject('Object Repository/Form_OR/Form Object Repo/Page_DataBeaver/button_Update'))
+
+WebUI.verifyElementPresent(findTestObject('Form_OR/Form Object Repo/Page_DataBeaver/Editing a form/Page_DataBeaver/div_Form Updated Successfully'), 
+    0)
 
 WebUI.closeBrowser()
 
