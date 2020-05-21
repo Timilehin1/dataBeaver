@@ -16,3 +16,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Login/Verify an admin can login with valid credentials'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Creating_user/button_Add New'))
+
+WebUI.click(findTestObject('Object Repository/Creating_user/a_ User'))
+

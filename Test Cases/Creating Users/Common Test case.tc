@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify an admin can delete an agent</name>
+   <name>Common Test case</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>6df95117-7dbc-4705-a034-c736b900fcd6</testCaseGuid>
+   <testCaseGuid>d9a89df0-5fd5-4efc-a371-778ddbe43058</testCaseGuid>
 </TestCaseEntity>

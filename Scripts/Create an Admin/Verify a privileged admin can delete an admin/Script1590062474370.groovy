@@ -27,7 +27,7 @@ WebUI.click(findTestObject('Object Repository/Create_Admin/a_ User'))
 
 WebUI.click(findTestObject('Object Repository/Create_Admin/svg_Create User_svg-inline--fa fa-times-cir_446c70'))
 
-WebUI.click(findTestObject('Object Repository/Create_Admin/button_Cancel'))
+//WebUI.click(findTestObject('Object Repository/Create_Admin/button_Cancel'))
 
 WebUI.click(findTestObject('Object Repository/Create_Admin/a_Admins'))
 

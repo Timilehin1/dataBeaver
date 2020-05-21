@@ -31,6 +31,8 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Object Repository/Create_Admin/a_Admins'))
 
+WebUI.delay(5)
+
 WebUI.click(findTestObject('Object Repository/Create_Admin/a_Add New'))
 
 WebUI.setText(findTestObject('Object Repository/Create_Admin/input_Enter Admin Email_email'), 'omolaratimilehin@yahoo.com')
