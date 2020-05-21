@@ -15,30 +15,4 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-
-WebUI.callTestCase(findTestCase('Login/Verify an admin can login with valid credentials'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Creating_user/button_Add New'))
-
-WebUI.click(findTestObject('Object Repository/Creating_user/a_ User'))
-
-WebUI.setText(findTestObject('Object Repository/Creating_user/input_First Name_fname'), 'Olayi')
-
-WebUI.setText(findTestObject('Object Repository/Creating_user/input_Last Name_lname'), 'Wola')
-
-WebUI.setText(findTestObject('Object Repository/Creating_user/input_Email_email'), 'olayi@gmail.com')
-
-WebUI.setText(findTestObject('Object Repository/Creating_user/input_Phone Number_phone'), '08138989765')
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Creating_user/select_Select GenderMaleFemale'), 'string:male', 
-    true)
-
-WebUI.click(findTestObject('Object Repository/Creating_user/span_Submit'))
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Creating_user/div_Record Successfully Updated'), 0)
-
-WebUI.closeBrowser()
 

@@ -20,13 +20,13 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://3.93.222.111/login')
 
-WebUI.setText(findTestObject('Object Repository/Page_DataBeaver/input_Email address_email'), 'oyeniran.timilehin@gmail.com')
+WebUI.setText(findTestObject('Login/input_Email address_email'), 'oyeniran.timilehin@gmail.com')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_DataBeaver/input_Password_password'), '8SQVv/p9jVScEs4/2CZsLw==')
+WebUI.setEncryptedText(findTestObject('Login/input_Password_password'), '8SQVv/p9jVScEs4/2CZsLw==')
 
-WebUI.click(findTestObject('Object Repository/Page_DataBeaver/span_Sign in'))
+WebUI.click(findTestObject('Login/span_Sign in'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_DataBeaver/div_Error Authentication failed Wrong password'), 
+WebUI.verifyElementPresent(findTestObject('Login/div_Error Authentication failed Wrong password'), 
     5)
 
 WebUI.closeBrowser()

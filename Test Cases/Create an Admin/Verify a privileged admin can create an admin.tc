@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify a privileged admin can create an admin</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>31c7f969-9233-4281-95b9-e9e927ed538b</testCaseGuid>
+</TestCaseEntity>

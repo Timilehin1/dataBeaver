@@ -21,24 +21,25 @@ WebUI.callTestCase(findTestCase('Login/Verify an admin can login with valid cred
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Creating_user/button_Add New'))
+WebUI.click(findTestObject('Object Repository/Create_Admin/button_Add New'))
 
-WebUI.click(findTestObject('Object Repository/Creating_user/a_ User'))
+WebUI.click(findTestObject('Object Repository/Create_Admin/a_ User'))
 
-WebUI.setText(findTestObject('Object Repository/Creating_user/input_First Name_fname'), 'Olayi')
+WebUI.click(findTestObject('Object Repository/Create_Admin/svg_Create User_svg-inline--fa fa-times-cir_446c70'))
 
-WebUI.setText(findTestObject('Object Repository/Creating_user/input_Last Name_lname'), 'Wola')
+WebUI.click(findTestObject('Object Repository/Create_Admin/button_Cancel'))
 
-WebUI.setText(findTestObject('Object Repository/Creating_user/input_Email_email'), 'olayi@gmail.com')
+WebUI.click(findTestObject('Object Repository/Create_Admin/a_Admins'))
 
-WebUI.setText(findTestObject('Object Repository/Creating_user/input_Phone Number_phone'), '08138989765')
+WebUI.click(findTestObject('Object Repository/Create_Admin/button_Invite Sent_btn btn-danger btn-sm'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Creating_user/select_Select GenderMaleFemale'), 'string:male', 
-    true)
+WebUI.waitForAlert(2)
 
-WebUI.click(findTestObject('Object Repository/Creating_user/span_Submit'))
+WebUI.verifyAlertPresent(2)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Creating_user/div_Record Successfully Updated'), 0)
+WebUI.acceptAlert()
 
+//WebUI.click(findTestObject('Object Repository/Create_Admin/svg_Invite Sent_svg-inline--fa fa-trash-alt_63d5d7'))
+//WebUI.click(findTestObject('Object Repository/Create_Admin/button_Invite Sent_btn btn-danger btn-sm'))
 WebUI.closeBrowser()
 

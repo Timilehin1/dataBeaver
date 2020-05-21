@@ -23,15 +23,13 @@ WebUI.navigateToUrl('http://3.93.222.111/login')
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Object Repository/Page_DataBeaver/input_Email address_email'), 'oyeniran.timilehin@gmail.com')
+WebUI.setText(findTestObject('Login/input_Email address_email'), 'oyeniran.timilehin@gmail.com')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_DataBeaver/input_Password_password'), 'Lh5IIxJidBk=')
+WebUI.setEncryptedText(findTestObject('Login/input_Password_password'), 'Lh5IIxJidBk=')
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Object Repository/Page_DataBeaver/span_Sign in'))
+WebUI.click(findTestObject('Login/span_Sign in'))
 
-WebUI.verifyElementPresent(findTestObject('Page_DataBeaver/div_Sign-in Successful'), 5)
-
-//WebUI.closeBrowser()
+WebUI.verifyElementPresent(findTestObject('Login/div_Sign-in Successful'), 5)
 

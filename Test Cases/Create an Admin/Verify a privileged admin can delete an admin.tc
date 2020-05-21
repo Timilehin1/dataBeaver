@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify a privileged admin can delete an admin</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>98fa1248-140b-438e-9da9-b11577aa9874</testCaseGuid>
+</TestCaseEntity>
